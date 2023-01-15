@@ -1,0 +1,22 @@
+//Exercício 1: Faça um algoritmo que receba dois números e ao final mostre o resultado da soma dos dois números lidos;
+
+//Entrada de dados:
+	PrimeiroNumero
+	SegundoNumero
+//Processamento
+	Somar os dois números
+//Saída
+	O resultado da soma
+	
+==================================
+Algoritmo:
+
+//Entrada de dados
+Ler PrimeiroNumero
+Ler SegundoNumero
+
+//Processamento
+soma = PrimeiroNumero + SegundoNumero
+
+//Saída
+Escrever soma
