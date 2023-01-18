@@ -2,7 +2,7 @@ algoritmo "Aula 1.D - Vetores III"
 
 var
 
-numero, nReverso: vetor[1..10] de inteiro
+numero : vetor[1..10] de inteiro
 i : inteiro
 
 inicio
