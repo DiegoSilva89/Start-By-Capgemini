@@ -9,7 +9,21 @@ public class App {
     }
 
     public static void main(String[] args) {
+        
+         //Comentário de linha
+        
+        /*
+            Minha primeira linha de comentário
+            Segunda linha de comentáro...
+        */
+        
+        /**
+         * Comentário de documentação
+         */
+        
         System.out.println(new App().getGreeting());
         System.out.println("Meu segundo comando de saída");
+        
+       
     }
 }
