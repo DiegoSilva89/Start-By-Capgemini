@@ -8,14 +8,14 @@ import java.util.Scanner;
 
 /**
  *
- * @author diego
+ * @author Diego Silva
  */
 public class ExerciciosJava06 {
     
      public static void main(String[] args) {
         
         //======================================================================
-            /*Leia dois valores para as variáveis A e B, e efetuar as trocas dos
+            /*Exercicio 06 - Leia dois valores para as variáveis A e B, e efetuar as trocas dos
             valores de forma que a variávelApasse a possuir ovalor da variável B
             e a variável B passe a possuir o valor da variável A.Apresentar os
             valores trocados;*/
