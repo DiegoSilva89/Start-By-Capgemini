@@ -29,10 +29,12 @@ public class ExerciciosJava19 {
             String sexo = leitor.next();
                         
             if("M".equalsIgnoreCase(sexo)){
-                System.out.println(i + " Seu nome é " + nome + "e você é homem");
+                System.out.println(i + " Seu nome é " + nome + "e você é "
+                        + "homem!");
                 homem ++;
             }else {
-                System.out.println(i + " Seu nome é " + nome + "e você é mulher");              
+                System.out.println(i + " Seu nome é " + nome + "e você é "
+                        + "mulher!");              
                 mulher ++;
             }                      
         }
