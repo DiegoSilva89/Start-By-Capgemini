@@ -23,12 +23,12 @@ public class ExerciciosJava20 {
         
         Scanner leitor = new Scanner(System.in);
         
-        int ano, totalCarros, totalAtel2000, totalAcima2000;
+        int ano, totalCarros, totalAte2000, totalAcima2000;
         double valor, valorFinal, desconto, totalPagar;
         String continuar;
         
         continuar = "S";
-        totalAtel2000 = 0;
+        totalAte2000 = 0;
         totalAcima2000 = 0;
         totalCarros = 0;
         totalPagar = 0;
@@ -42,7 +42,7 @@ public class ExerciciosJava20 {
             
             if(ano <= 2000){
                 desconto = 0.12;
-                totalAtel2000 ++;
+                totalAte2000 ++;
                 totalCarros ++;
             } else {
                 desconto = 0.07;
@@ -71,9 +71,12 @@ public class ExerciciosJava20 {
                     " fabricados após o ano 2000");                        
             } else {
                 System.out.println("Foram comprados " + totalCarros + 
-                    " carros, sendo " + totalAtel2000 + " carros "
-                    + "fabricados até o ano 2000 e " 
-                    + totalAcima2000 + " carros fabricados após o ano 2000");
+                        " carros");
+                System.out.println("Carros fabricados até o ano 2000 "
+                        + "comprados:  " + totalAte2000);
+                System.out.println("Carros fabricados após o ano 2000 "
+                        + "comprados: " + totalAcima2000);
+                
         }
         
         System.out.printf("O valor final a ser pago é: R$%.2f", 
