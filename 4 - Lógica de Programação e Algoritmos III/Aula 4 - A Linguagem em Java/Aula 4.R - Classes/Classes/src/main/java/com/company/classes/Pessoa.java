@@ -13,7 +13,17 @@ public class Pessoa {
     /*Diferente do public, o private não permite que as variáveis ou métodos 
     sejam modificados por outras classes*/
     
-    //método - são as ações que a entidade pode fazer no sistema.
+    /*Método construtor sempre tem o mesmo nome da classe como a seguir, 
+    e diferente de método, não precisa ter o nome no infinitivo,e geralmente é 
+    utilizado apenas para declarar valores default*/
+    public Pessoa(float peso, float altura) {
+        this.peso = peso;
+        this.altura = altura;
+    } 
+    
+    
+    /*métodos - são as ações que a entidade pode fazer no sistema e precisam 
+    ter o nome no infinitivo*/
     public float calcularIMC() {
         float imc = peso / (altura * altura);
         return imc;
