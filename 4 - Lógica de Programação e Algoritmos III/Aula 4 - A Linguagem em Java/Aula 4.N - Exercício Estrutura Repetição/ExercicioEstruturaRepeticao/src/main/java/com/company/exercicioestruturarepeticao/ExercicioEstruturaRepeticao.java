@@ -1,16 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.company.exercicioestruturarepeticao;
 
 /**
  *
- * @author diego
+ * @author Diego Silva
  */
+
+import java.util.Scanner;
+
 public class ExercicioEstruturaRepeticao {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        Scanner leitorScanner = new Scanner(System.in);
+        
+        char desejaContinuar = 'S';
+        
+        while(desejaContinuar == 'S' || desejaContinuar == 's'){
+            
+            System.out.println("Digite um número: ");
+            int numero = leitorScanner.nextInt();
+            
+            if(numero == 0) {
+                System.out.println("O número é zero");
+            } else {
+                if (numero > 0) {
+                    System.out.println("O número é maior que zero");
+                } else {
+                    System.out.println("O número é menor que zero");
+                }
+            }
+            
+            System.out.println("Deseja continuar? ");
+            desejaContinuar = leitorScanner.next().charAt(0);
+        }
+        
     }
 }
