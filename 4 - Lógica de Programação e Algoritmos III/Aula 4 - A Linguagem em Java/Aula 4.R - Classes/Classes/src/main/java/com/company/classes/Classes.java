@@ -10,7 +10,8 @@ public class Classes {
 
     public static void main(String[] args) {
        
-        Pessoa objetoPessoa = new Pessoa();        
+        Pessoa objetoPessoa = new Pessoa(70.0f, 1.70f); 
+        //neste caso o método construtor está passando parametro peso e altura 
         
         Scanner leitor = new Scanner(System.in);
         
