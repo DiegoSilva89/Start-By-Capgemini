@@ -16,7 +16,10 @@ public class Funcionario {
     private String CPF;
     private Date dataNasimento;
     private float salario;
-           
+    
+    //contrutor
+    public Funcionario() {
+        
     }
 
     //Getter and setters, métodos acessores

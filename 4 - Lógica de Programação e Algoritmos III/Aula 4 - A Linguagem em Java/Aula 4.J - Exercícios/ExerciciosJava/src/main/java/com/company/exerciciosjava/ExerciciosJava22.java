@@ -1,20 +1,26 @@
-package com.company.exerciciofor;
-
-/**
- * @author Diego Silva
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+package com.company.exerciciosjava;
 
 import java.util.Scanner;
 
-public class ExercicioFor {
-
+/**
+ *
+ * @author diego
+ */
+public class ExerciciosJava22 {
+    
     public static void main(String[] args) {
         
+        //======================================================================
         /*Exercício 22 - Faça um algoritmo que receba o preço de custo e o 
         preço de venda de 40 produtos. Mostre como resultado se houve lucro, 
-        prejuízo ou empate cada produto. Informe o valor de custo de cada 
+        prejuízo ou empate para cada produto. Informe o valor de custo de cada 
         produto, o valor de venda de cada produto, amédia de preço de custo e 
-        do preço de venda; */
+        do preço de venda;*/
+        //======================================================================
         
         String nomeProduto;
         float precoCusto, precoVenda, totalCusto, totalVenda;
@@ -61,4 +67,5 @@ public class ExercicioFor {
                 (totalVenda / i));
         
     }
+    
 }

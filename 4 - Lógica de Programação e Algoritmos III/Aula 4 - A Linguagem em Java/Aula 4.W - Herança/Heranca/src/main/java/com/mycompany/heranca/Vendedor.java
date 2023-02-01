@@ -4,6 +4,8 @@
  */
 package com.mycompany.heranca;
 
+import java.util.Date;
+
 /**
  *
  * @author diego
@@ -35,6 +37,14 @@ public class Vendedor extends Funcionario {
 
     public void setComissaoPorItem(float comissaoPorItem) {
         this.comissaoPorItem = comissaoPorItem;
+    }
+
+    void setDataNascimento(Date date) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void setCpf(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     
