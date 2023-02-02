@@ -53,8 +53,6 @@ public class ExerciciosJava32 {
                     System.out.print("Triângulo escaleno!");
                 }                  
             }
-        }
-             
-     }
-    
+        }             
+    }    
 }
