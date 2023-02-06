@@ -1,0 +1,77 @@
+1. Iniciando um projeto
+
+	1.1 Definição de um projeto básico
+	
+
+		Definição do projeto desenvolvido no curso de lógica de programação III e algoritmos III
+
+		Organiza App
+
+		Descrição: Aplicação para o gerenciamento de projetos e as taregas envolvidas nesses projetos.
+
+		Objetivo: Resolver a questão de organização de um ou vários projetos.
+
+		Entidades: 
+
+		* Projeto - É a primeira entidade que devemos criar pois terá as informações e produtos do projeto;
+			- Nome;
+			- Descrição;
+			- Data de criação;
+			- Data de atualização.
+		* Tarefa - É onde registramos nossa atividade;
+			- Nome;
+			- Descrição;
+			- Status;
+			- Observação;
+			- Prazo;
+			- Data de criação;
+			- Data de atualização.
+
+		Funcionálidades: Permitir a criação de uma tarefa é uma funcionalidade necessária no sistema.
+
+		1.1.1 Requisitos do projeto
+
+			Requisitos: (atividades e funcionalidades que o sistema tem que garantir)
+
+			* Permitir criar o projeto;
+			* Permitir alterar o projeto;
+			* Permitir deletar o projeto;
+			* Permitir criar a tarefa;
+			* Permitir alterar a tarefa; 
+			* Permitir deletar a tarefa;
+
+			1.1.2 Regras de negócio
+			
+			* Não irá conter um sistema de login;
+			* Não haverá o conceito de usuário;
+			* Toda tarefa deve pertencer a um projeto;
+			* Não podem haver tags repetidas numa mesma tarefa;
+			* Deve ser possível filtrar as tarefas por tag.
+			
+			
+			1.1.3 Definição de tecnologia
+			
+			Tecnologias utilizadas: 
+			
+			Java;
+			
+			
+--Etapas do Desenvolvimento--
+
+	- Criação do banco de dados (OK);
+	- Criação de classes de modelo (OK);
+	- Criação de conexão com o banco de dados (OK);
+	- Criação de classes de controle (Acesso aos dados do banco);
+	- Criação da interface gráfica;
+		- Criação da tela principal;
+			- Criação do CellRederer Prazo;
+			- Criação do CellRederer Editar e Deletar;
+		- Criação da tela de cadastro de projeto;
+		- Criação da tela de cadastro de Tarefa;
+	- Implementação dos eventos;
+		- Validações;
+	- Ajustes finais;
+	- Teste da aplicação.
+	
+			
+			
