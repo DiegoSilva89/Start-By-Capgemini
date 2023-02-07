@@ -35,6 +35,10 @@ public class Task {
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
     }
+    
+    public Task() {
+        this.createdAt = new Date();
+    }
 
     //getters and setters. Métodos que permitem acessar os atributos
     public int getId() {
