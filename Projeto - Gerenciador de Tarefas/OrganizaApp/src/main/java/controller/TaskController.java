@@ -128,7 +128,7 @@ public class TaskController {
             statement.setInt(1, taskId);// mudar o para o parametro escolhido
             statement.execute();   //executar a remoção da tarefa         
         } catch (Exception ex) {
-            throw new RuntimeException("Erro ao deletar a tarefa " + ex.getMessage());            
+            throw new RuntimeException("Erro ao deletar a tarefa " + ex.getMessage(), ex);            
         // finally será sempre executado ao final do try, tendo tratamento de exceção ou não.
         } finally {
             ConnectionFactory.closeConnection(connection, statement);
@@ -142,8 +142,8 @@ public class TaskController {
         Connection connection = null;
         PreparedStatement statement = null;
         //ResultSet guarda o que tivermos de resposta de retorno do banco de dados
-        ResultSet resultSet = null;
-        
+        ResultSet resultSet = null;        
+        //Lista de taregas que será devolvida quando a chamada do método acontecer 
         List<Task> tasks = new ArrayList<Task>();
         
         try {
@@ -169,12 +169,14 @@ public class TaskController {
                 
             }
             
-        } catch (Exception e) {
-            
-        }
+        } catch (Exception ex) {
+             throw new RuntimeException("Erro ao deletar a tarefa " + ex.getMessage(), ex);            
+        } finally {
+            ConnectionFactory.closeConnection(connection, statement, resultSet);
+        }        
         
-        
-        return null;
+        //Lista de tarefas que foi criada e carregada do banco de dados
+        return tasks;
     }
     
 }
