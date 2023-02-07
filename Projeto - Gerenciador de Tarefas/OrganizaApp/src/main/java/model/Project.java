@@ -28,6 +28,10 @@ public class Project {
         this.updatedAt = updatedAt;
     }
 
+    public Project() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     //getters and setters. Métodos que permitem acessar os atributos
     public int getId() {
         return id;
@@ -74,6 +78,10 @@ public class Project {
     @Override
     public String toString() {
         return "Project{" + "id=" + id + ", name=" + name + ", description=" + description + ", creatadAt=" + creatadAt + ", updatedAt=" + updatedAt + '}';
+    }
+
+    public void setCreatedAt(java.sql.Date date) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     
